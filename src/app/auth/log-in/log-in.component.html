@@ -3,7 +3,7 @@
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <div>
-          <label for="username">Name</label>
+          <label for="username" class="input-name">Name</label>
         </div>
         <div>
           <input type="text" id="username" formControlName="username" class="form-control"
@@ -16,7 +16,7 @@
 
       <div class="form-group">
         <div>
-          <label for="password">Passwort</label>
+          <label for="password" class="input-name">Passwort</label>
         </div>
         <div>
           <input type="password" id="password" formControlName="password" class="form-control"
@@ -31,7 +31,7 @@
     </form>
 
     <p class="register-link">
-      Noch kein Mitglied? <a routerLink="/signIn">Registriere hier</a>
+      Noch kein Mitglied? <a routerLink="/signIn"><span class="register-link">Registriere hier</span></a>
     </p>
   </div>
 </div>
